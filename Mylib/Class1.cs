@@ -15,7 +15,8 @@ namespace Mylib
                     int S = 0;
                     for (int j = 0; j < columns; j++)
                     {
-                        if (mas[i, j] < 0) S += mas[i, j];
+                        if (mas[i, j] % 3 == 0) S += mas[i, j];
+
                     }
                     res[i] = S;
                 }
